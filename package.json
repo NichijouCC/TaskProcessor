@@ -1,0 +1,25 @@
+{
+  "name": "Toygl.worker",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "repository": "https://github.com/NichijouCC/Toygl.worker.git",
+  "author": "dongbo <895188445@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "rollup -c ./config/rollup.config.dev.js -w",
+    "test": "mocha -r ts-node/register __test__/**/*.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.2.5",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "rollup": "^1.27.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-typescript2": "^0.25.2",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2"
+  }
+}
