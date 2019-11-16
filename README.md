@@ -1,0 +1,2 @@
+# Toygl.worker
+simplify webworker
