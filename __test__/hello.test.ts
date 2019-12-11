@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import 'mocha';
-import { TaskProcessor } from '../src/taskProcesser';
+import { TaskProcessor } from '../src/main';
 
 export function helloTest() {
     let taskProcessor = new TaskProcessor('helloWorker');

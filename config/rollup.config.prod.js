@@ -14,7 +14,7 @@ const banner =
 export default {
     ...baseConfig,
     output: [
-        { format: 'umd', file: `dist/${name}.js`, banner, sourcemap: true },
+        { format: 'umd', name: "main", file: `dist/${name}.js`, banner, sourcemap: true },
         { format: 'cjs', file: `dist/${name}.cjs.js`, banner, sourcemap: true },
         { format: 'es', file: `dist/${name}.es.js`, banner, sourcemap: true },
     ],
