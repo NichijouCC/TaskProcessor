@@ -10,9 +10,9 @@ import { name } from '../package.json';
 export default {
     input: './src/main.ts',
     output: [
-        { format: 'umd', file: `dist/${name}.js`, sourcemap: true },
-        { format: 'cjs', file: `dist/${name}.cjs.js`, sourcemap: true },
-        { format: 'es', file: `dist/${name}.es.js`, sourcemap: true },
+        { format: 'umd', file: `build/${name}.js`, sourcemap: true },
+        { format: 'cjs', file: `build/${name}.cjs.js`, sourcemap: true },
+        { format: 'es', file: `build/${name}.es.js`, sourcemap: true },
     ],
     plugins: [
         json(),

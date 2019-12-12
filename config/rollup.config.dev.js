@@ -4,7 +4,7 @@ import { name } from '../package.json';
 export default {
     ...baseConfig,
     output: [
-        { format: 'es', file: `dist/${name}.es.js`, sourcemap: true },
+        { format: 'es', file: `build/${name}.es.js`, sourcemap: true },
     ],
     plugins: [
         ...baseConfig.plugins,
