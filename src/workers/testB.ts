@@ -1,6 +1,7 @@
 import { add } from '../testFunc'
-
-export default function helloWorkerB(params: any) {
-    console.warn("test worker rec:", params, add(4));
-    return params;
+import { createTaskProcessorWorker } from './createTaskProcessorWorker';
+function helloWorkerB(params: any) {
+    console.warn("test worker rec:", params);
+    return add(4);
 }
+export default createTaskProcessorWorker(helloWorkerB);
