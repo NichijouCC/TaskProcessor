@@ -12,12 +12,12 @@ gulp.task('build', async function () {
     rollup.rollup({
         input: workers,
         plugins: [
-            rollupTypescript()
+            rollupTypescript({target: "es5"})
         ]
     }).then(function (bundle) {
         return bundle.write({
             dir: 'build/workers',
-            banner: '/* This file is automatically rebuilt by the Cesium build process. */',
+            banner: '/* This file is automatically rebuilt by the worker build process. */',
             format: 'amd'
         });
     })
